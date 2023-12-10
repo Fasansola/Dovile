@@ -40,10 +40,11 @@ h4 {
 
 p,
 li,
-a {
+a,
+label {
     font-size: 1.8rem;
     line-height: 1.7;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 ul {
@@ -132,13 +133,14 @@ header .logo {
 
 .twocol div {
     width: 50%;
-    height: 100%;
+    height: inherit;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-items: center; */
 }
 
 .right {
@@ -165,6 +167,7 @@ header .logo {
     height: inherit;
 }
 
+#button,
 button {
     font-size: 1.8rem;
     background-color: rgb(69, 69, 69);
@@ -270,13 +273,14 @@ footer {
 
 .four-grid {
     display: grid;
+    padding-top: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 35px;
     height: 350px;
 }
 
 .four-grid img {
-    width: 300px;
+    width: 250px;
 }
 
 .footer-menu i {
@@ -340,4 +344,52 @@ footer .terms {
 .three-grid img {
     width: 33%;
     height: 400px;
+}
+
+
+/* CONTACT US PAGE */
+
+.contact {
+    height: 900px;
+    align-items: center;
+}
+
+#contact-image {
+    height: 900px;
+}
+
+.contact img {
+    margin: 0;
+    height: 900px;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    padding-top: 20px;
+}
+
+input {
+    padding: 15px;
+    display: block;
+    width: 500px;
+    height: 50px;
+    border: none;
+    background-color: #F1F1F1;
+}
+
+textarea {
+    width: 500px;
+    border: none;
+    background-color: #F1F1F1;
+    padding: 15px;
+}
+
+#button {
+    margin-top: 20px;
+    height: 60px;
+    width: 200px;
 }
