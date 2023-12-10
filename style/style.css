@@ -23,7 +23,7 @@ h5 {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 62px;
 }
 
 h2 {
@@ -38,11 +38,18 @@ h4 {
     font-size: 28px;
 }
 
-p {
+p,
+li,
+a {
     font-size: 1.8rem;
     line-height: 1.7;
     font-weight: 400;
 }
+
+ul {
+    list-style: disc inside;
+}
+
 
 strong {
     font-weight: 700;
@@ -62,6 +69,7 @@ a:hover {
 .light-bg {
     background-color: rgb(255, 245, 245);
 }
+
 
 
 /* HEADER */
@@ -134,7 +142,7 @@ header .logo {
 }
 
 .right {
-    padding-right: 120px;
+    padding-right: 100px;
 }
 
 .left {
@@ -146,7 +154,7 @@ header .logo {
 }
 
 .content>*:not(:last-child) {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .twocol p {
@@ -159,13 +167,12 @@ header .logo {
 
 button {
     font-size: 1.8rem;
-    width: 164px;
-    height: 54px;
     background-color: rgb(69, 69, 69);
     color: white;
     border: none;
     transition-property: background-color;
     transition-duration: 500ms;
+    padding: 20px 70px 20px 70px;
 }
 
 button:hover {
@@ -216,7 +223,7 @@ button:hover {
 
 .two-grid {
     display: grid;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 50% 50%;
     row-gap: 50px;
     column-gap: 100px;
     width: 1200px;
@@ -280,4 +287,57 @@ footer {
 footer .terms {
     font-size: 1.8rem;
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* SERVICES PAGE */
+
+.services {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 120px 0;
+    align-items: center;
+}
+
+
+.context {
+    width: 900px;
+}
+
+.onecol {
+    align-items: flex-start;
+    width: 1240px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 150px;
+}
+
+.services-grid h3 {
+    padding-bottom: 15px;
+}
+
+.service-cta {
+    padding-top: 18px;
+}
+
+.three-grid {
+    width: 100%;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+.three-grid img {
+    width: 33%;
+    height: 400px;
 }
