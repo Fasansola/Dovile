@@ -393,3 +393,20 @@ textarea {
     height: 60px;
     width: 200px;
 }
+
+
+
+/* BLOG POSTS Page */
+
+.post-blob>*:not(:last-child) {
+    padding-bottom: 20px;
+}
+
+.post-blob img {
+    height: 400px;
+    width: 100%;
+}
+
+.posts-tags {
+    font-size: 1.6rem;
+}
